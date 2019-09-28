@@ -55,8 +55,5 @@ Repositorio para BabyShare 2019
     2. Eliminar un archivo sobre el que otra persona trabaje. Ejemplo yo estoy trabajando sobre _variables.scss y alguien lo borra, cuando guarde y suba mis cambios al remoto hay conflicto.
     3. Renombrar un archivo. Ejemplo cambio estilos.css por styles.css y hay alguien trabajando sobre el le creará un conflicto al hacer merge.
 
-10. Para traer archivos del repositorio REMOTO al local:
-
-    git pull origin master [o a la rama en la que estén interesadas en tenerlos]
 
 
