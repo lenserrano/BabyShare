@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700|Comfortaa:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dc59d4cb2d.js"></script>
+    <title>BabyShare</title>
+</head>
+<body>
+    <header id="header">
+        <img src="assets/img/BabyShare_Logo.png" alt="logo BabyShare">
+        <div class="buscar" >
+            <input type="text" placeholder="Inicia tu búsqueda">
+            <button>Buscar</button>
+        </div>
+        
+        <div class ="mobile">
+            <button><i class="fas fa-bars">
+                <div class="dropdown">
+                    prueba
+                </div>     
+            </i></button>
+        </div>
+    </header>
+    <section>
+        <form action="/index.html" method="POST">
+            <div class="imgcontainer">
+                <img src="assets/img/img_avatar.jpg" alt="avatar" class="avatar" width="100px" height="100px"> 
+            </div>
+            <div class="container">
+                <label for="uname"><b>Usuario</b></label>
+                <input type="text" placeholder="Escribe tu usuario" name="uname" required>
+
+                <label for="psw"><b>Contraseña</b></label>
+                <input type="password" placeholder="Escribe tu contraseña" name="psw" required>
+                
+                <button type="submit">Login</button>
+            <label>
+                 <input type="checkbox" checked="checked" name="remember"> Recordar contraseña
+            </label>
+
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <span class="psw"> <a href="#">¿Olvidaste tu contraseña?</a></span>
+            </div>
+        </form>
+    </section>
+    </body>
+    </html>
