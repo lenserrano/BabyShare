@@ -109,13 +109,18 @@ figure figcaption {
 }
 
 #favoritos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 80vw;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.title {
+  font-size: 16px;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  text-align: left !important;
+  color: #3f7c6f;
+  grid-area: title;
 }
 
 .mas-vendidos {
@@ -123,6 +128,47 @@ figure figcaption {
   grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(2, auto);
   width: 100%;
+  gap: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.favorites {
+  width: 100%;
+}
+.favorites img {
+  width: 35vw;
+  height: auto;
+}
+.favorites .details {
+  font-size: 12px;
+  font-family: "Assistant", sans-serif;
+  font-weight: 300;
+  color: #527466;
+}
+
+.seller-details {
+  display: inherit;
+  align-items: center;
+  margin: 0;
+}
+.seller-details .avatar {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #f2fbf9;
+  border-radius: 50%;
+  padding-right: 5px;
+}
+.seller-details .seller {
+  font-size: 12px;
+  font-family: "Assistant", sans-serif;
+  color: #527466;
 }
 
 body {

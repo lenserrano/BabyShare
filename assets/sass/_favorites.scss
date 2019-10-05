@@ -1,10 +1,53 @@
 #favoritos{
-    @include flexbox( row, center, center);
+   
     width: 80vw;
     margin-top: $margin;
     margin-bottom: $margin;
 }
+.title{
+    font-size: map-get($fs, normal);
+    font-family: $font-title;
+    font-weight: bold;
+    text-align: left !important;
+    color: $color-subtitle;
+    grid-area: title;
+}
 .mas-vendidos{
     @include grid(3, 2);
     width: 100%;
+    gap: $margin;
+}
+.card{
+    @include flexbox( row, center, center);
+    flex-wrap: wrap;
+}
+.favorites{
+    width: 100%;
+    img{
+        width: 35vw;
+        height: auto;
+    }
+    .details{
+        font-size: map-get($fs, small );
+        font-family: $font-normal;
+        font-weight: 300;
+        color: $color-main;
+    }
+}
+.seller-details{
+    display: inherit;
+    align-items: center;
+    margin: 0;
+    .avatar{
+            width: 15px;
+            height: 15px;
+            border: $border-avatar;
+            border-radius: 50%;
+            padding-right: 5px;
+    }
+    .seller{
+        font-size: map-get($fs, small);
+        font-family: $font-normal;
+        color: $color-main;
+    }
 }
