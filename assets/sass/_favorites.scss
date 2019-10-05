@@ -1,0 +1,10 @@
+#favoritos{
+    @include flexbox( row, center, center);
+    width: 80vw;
+    margin-top: $margin;
+    margin-bottom: $margin;
+}
+.mas-vendidos{
+    @include grid(3, 2);
+    width: 100%;
+}
