@@ -1,0 +1,9 @@
+.carousel{
+    margin-top: $margin;
+    margin-bottom: $margin;
+    @include flexbox(row, center, center);
+    img{
+        width: 80vw;
+        height: auto;
+    }
+}

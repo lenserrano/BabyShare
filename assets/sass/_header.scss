@@ -24,10 +24,26 @@ header{
     input:focus{
         border-color: $border-color;
     }
+    button {
+        background: transparent;
+        border: none;
+        outline: none;
+        img{
+            width:25px;
+            height: 25px;
+        }
+        
+    }
+}
+.mobile{
     button{
-        background-image: url();
-        width:auto;
-        height: inherit;
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+    button img{
+        width: 25px;
+        height: 25px;
     }
 }
 .dropdown{
