@@ -1,17 +1,25 @@
 #vender{
     @include flexbox(row, center, center);
     width: 80vw;
+    margin-top: $margin;
+    margin-bottom: $margin;
 }
 .container{
-    margin-bottom: $margin;
     @include grid(1, 4);
     width: 100%;
 }
 figure{
     @include flexbox(row, center, center);
+    flex-wrap: wrap;
     margin: 0;
     .process{
         width: 10vw;
         height: auto;
+    }
+    figcaption{
+        font-size: map-get($fs, small);
+        font-family: $font-normal;
+        color: $color-main;
+        font-weight: bold;
     }
 }
