@@ -26,7 +26,7 @@ Repositorio para BabyShare 2019
 5. Para añadir archivos al repositorio REMOTO.
     Con el staging libre [todos los archivos añadidos y hecho commit]
 
-    git push -u origin master [la última es la rama que mandaremos al repositorio, puede ser diferente a master(default)]
+    git push origin master [la última es la rama que mandaremos al repositorio, puede ser diferente a master(default)]
 
 6. Como creo una RAMA:
 
