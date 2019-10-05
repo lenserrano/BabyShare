@@ -1,0 +1,38 @@
+header{
+    width: 100vw;
+    height: 10vh;
+    @include flexbox( row, space-between, center );
+    img{
+        width: auto;
+        height: inherit;
+    }
+    font-family: $font-normal;
+    background-color: $bg-header;
+    color: $color-main;
+}
+.buscar{
+    font-size: map-get($fs, small);
+    width: 50%;
+    @include flexbox( row, space-between, center );
+    input{
+        border: $border-search;
+        border-radius: $r-search;
+        outline: none;
+        padding: 5px 20px 5px 25px;
+        width: 100%;
+    }
+    input:focus{
+        border-color: $border-color;
+    }
+    button{
+        background-image: url();
+        width:auto;
+        height: inherit;
+    }
+}
+.dropdown{
+    font-family: $font-normal;
+    font-size: map-get($fs, small);
+    background: $bg-dropdown;
+    color: $color-dropdown;
+}

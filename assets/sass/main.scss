@@ -1,20 +1,7 @@
 @import 'variables';
+@import 'mixins';
+@import 'header';
 
-.title{
-    font-size: map-get($fs, x-large);
-}
-.subtitle{
-    font-size: map-get($fs, large);
-}
-.normal{
-    font-size: map-get($fs, normal);
-}
-.small{
-    font-size: map-get($fs, small);
-}
-.x-small{
-    font-size: map-get($fs, x-small);
-}
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
 }
