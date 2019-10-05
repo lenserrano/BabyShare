@@ -1,0 +1,25 @@
+.title {
+  font-size: 36px;
+}
+
+.subtitle {
+  font-size: 28px;
+}
+
+.normal {
+  font-size: 16px;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.x-small {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
