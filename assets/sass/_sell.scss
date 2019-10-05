@@ -1,0 +1,17 @@
+#vender{
+    @include flexbox(row, center, center);
+    width: 80vw;
+}
+.container{
+    margin-bottom: $margin;
+    @include grid(1, 4);
+    width: 100%;
+}
+figure{
+    @include flexbox(row, center, center);
+    margin: 0;
+    .process{
+        width: 10vw;
+        height: auto;
+    }
+}

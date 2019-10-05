@@ -1,7 +1,10 @@
 @import 'variables';
 @import 'mixins';
 @import 'header';
+@import 'promotions';
+@import 'sell';
 
 body{
     margin: 0;
+    @include flexbox(column, center, center);
 }
