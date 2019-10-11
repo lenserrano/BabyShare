@@ -26,7 +26,7 @@ header img {
   border: 1px solid #f2fbf9;
   border-radius: 10px;
   outline: none;
-  padding: 5px 20px 5px 25px;
+  padding: 5px 10px 5px 15px;
   width: 100%;
 }
 .buscar input:focus {
@@ -123,7 +123,7 @@ figure figcaption {
   grid-area: title;
 }
 
-.mas-vendidos {
+.mas-vendidos, .recomendados {
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(2, auto);
@@ -147,10 +147,33 @@ figure figcaption {
   height: auto;
 }
 .favorites .details {
+  /* @include flexbox(row, center, center);
+  flex-wrap: nowrap; */
+  width: 35vw;
   font-size: 12px;
   font-family: "Assistant", sans-serif;
   font-weight: 300;
   color: #527466;
+}
+
+.price-like {
+  display: inherit;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.price-like .precio {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.5em 2em 0.2em 0.5em;
+}
+
+.name {
+  display: inherit;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 0.2em 2em 0.5em 0.5em;
 }
 
 .seller-details {

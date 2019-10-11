@@ -12,7 +12,7 @@
     color: $color-subtitle;
     grid-area: title;
 }
-.mas-vendidos{
+.mas-vendidos, .recomendados{
     @include grid(3, 2);
     width: 100%;
     gap: $margin;
@@ -28,12 +28,35 @@
         height: auto;
     }
     .details{
+        /* @include flexbox(row, center, center);
+        flex-wrap: nowrap; */
+        width: 35vw;
         font-size: map-get($fs, small );
         font-family: $font-normal;
         font-weight: 300;
         color: $color-main;
+        
     }
 }
+.price-like{
+    display: inherit;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    .precio{
+        font-size: map-get($fs, normal );
+        font-weight: bold;
+        padding: .5em 2em .2em .5em;
+    }
+}
+.name{
+    display: inherit;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+    padding: .2em 2em .5em .5em;
+}
+
 .seller-details{
     display: inherit;
     align-items: center;
