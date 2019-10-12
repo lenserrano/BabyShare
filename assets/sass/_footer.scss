@@ -1,0 +1,30 @@
+footer{
+    width: 100vw;
+    height: auto;
+    font-family: $font-normal;
+    background-color: $bg-footer;
+    color: $color-main;
+    
+}
+.mobile-footer{
+    @include flexbox( row, space-between, center );
+    margin: 1% 10%;
+}
+.icons-footer{
+    width: 40px;
+    height: auto;
+}
+.main-icon-footer{
+    border: 1px solid white;
+    border-radius: 50%;
+    background: white;
+    width: 60px;
+    height: 60px;
+    display:inherit;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 40px;
+        height: auto;
+    }
+}

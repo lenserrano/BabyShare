@@ -194,6 +194,42 @@ figure figcaption {
   color: #527466;
 }
 
+footer {
+  width: 100vw;
+  height: auto;
+  font-family: "Assistant", sans-serif;
+  background-color: #b9ded6;
+  color: #527466;
+}
+
+.mobile-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1% 10%;
+}
+
+.icons-footer {
+  width: 40px;
+  height: auto;
+}
+
+.main-icon-footer {
+  border: 1px solid white;
+  border-radius: 50%;
+  background: white;
+  width: 60px;
+  height: 60px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.main-icon-footer img {
+  width: 40px;
+  height: auto;
+}
+
 body {
   margin: 0;
   display: flex;
