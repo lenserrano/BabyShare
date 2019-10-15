@@ -8,6 +8,7 @@ header {
   font-family: "Assistant", sans-serif;
   background-color: #b9ded6;
   color: #527466;
+  overflow: hidden;
 }
 header img {
   width: auto;
@@ -42,6 +43,10 @@ header img {
   height: 25px;
 }
 
+.mobile {
+  float: left;
+  overflow: hidden;
+}
 .mobile button {
   background: transparent;
   border: none;
@@ -52,11 +57,74 @@ header img {
   height: 25px;
 }
 
-.dropdown {
-  font-family: "Assistant", sans-serif;
-  font-size: 12px;
-  background: #1d2623;
+.mobile .dropbtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  float: left;
   color: #e2f4f0;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.link:hover {
+  color: #54b67d;
+}
+
+.sub-link {
+  padding: 2em;
+}
+
+.sub-link a:hover {
+  color: #54b67d;
+}
+
+.dropbtn:focus {
+  background-color: #54b67d;
+}
+
+ul, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.dropdown-content {
+  font-family: "Assistant", sans-serif;
+  font-size: 28px;
+  background: #1d2623;
+  opacity: 0.9;
+  color: #e2f4f0;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding-left: 0.5em;
+  padding-top: 1em;
+}
+
+.dropdown-content .link {
+  float: none;
+  color: #e2f4f0;
+  font-family: "Assistant", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: #54b67d;
+}
+
+.show {
+  display: block;
 }
 
 .carousel {

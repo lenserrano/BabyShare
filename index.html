@@ -19,12 +19,33 @@
         </div>
         
         <div class ="mobile">
-            <button>
+            <button class="dropbtn" onclick="showMenu()">
                 <img src="assets/img/icons/menu-button-of-three-horizontal-lines.png" alt="">
-                <div class="dropdown">
-                    
-                </div>     
             </button>
+            <div class="dropdown-content" id="mobileMenu">
+                <div class="sesion">
+                        <botton class="inicia"></botton>
+                        <botton class="crea"></botton>
+                </div>
+                <div class="menu-nav">
+                    <ul>
+                        <li><a href="#" class="link">Categorías</a></li>
+                            <li><a href="#" class="link sub-link">Niñas</a></li>
+                            <li><a href="#" class="link sub-link">Niños</a></li>
+                            <li><a href="#" class="link sub-link">Juguetes</a></li>
+                            <li><a href="#" class="link sub-link">Accesorios</a></li>
+                            <li><a href="#" class="link sub-link">Maternidad</a></li>
+                        <li><a href="#" class="link sesion-on">Mi Clóset</a></li>
+                        <li><a href="#" class = "link sesion-on">Mis Pedidos</a></li>
+                        <li><a href="#" class="link sesion-on">Mi Monedero</a></li>
+                        <li><a href="#" class="link sesion-on">Configuración</a></li>
+                            <li><a href="#" class="link sub-link sesion-on">Cambiar contraseña</a></li>
+                            <li><a href="#" class="link sub-link sesion-on">Métodos de pago</a></li>
+                            <li><a href="#" class="link sub-link sesion-on">Dirección de envío</a></li>
+                    </ul>
+                    <p>Nuestras redes</p>
+                </div>
+            </div>     
         </div>
     </header>
     <!--/HEADER-->
@@ -183,9 +204,11 @@
         <span><img src="./assets/img/icons/favoritos.png" alt="" class="icons-footer"></span>
         <span class="main-icon-footer"><img src="./assets/img/icons/camera.png" alt="" class="icons-footer-"></span>
         <span><img src="./assets/img/icons/notification.png" alt="" class="icons-footer"></span>
-        </div>
-        
+        </div>  
     </footer>
     <!--/FOOTER-->
+    <!--SCRIPTS-->
+    <script src="./assets/js/dropdown.js"></script>
+    <!--/SCRIPTS-->
 </body>
 </html>

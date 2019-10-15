@@ -9,6 +9,7 @@ header{
     font-family: $font-normal;
     background-color: $bg-header;
     color: $color-main;
+    overflow: hidden;
 }
 .buscar{
     font-size: map-get($fs, small);
@@ -45,10 +46,65 @@ header{
         width: 25px;
         height: 25px;
     }
+    float: left;
+    overflow: hidden;
 }
-.dropdown{
+.mobile .dropbtn{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 0;
+}
+.link{
+    text-decoration: none;
+    float:left;
+    color: $color-dropdown; 
+    text-align: center;
+    padding-bottom: 1em;
+}
+.link:hover{
+    color: $color-linkhover;
+}
+.sub-link {
+    padding: 2em;
+}
+.sub-link a:hover{
+    color: $color-linkhover;
+}
+.dropbtn:focus{
+    background-color: $color-linkhover;
+}
+ul, li{
+    text-decoration: none;
+    list-style:none;
+}
+.dropdown-content{
     font-family: $font-normal;
-    font-size: map-get($fs, small);
+    font-size: map-get($fs, large);
     background: $bg-dropdown;
+    opacity: .9 ;
     color: $color-dropdown;
+    display:none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    padding-left: .5em;
+    padding-top: 1em;
+}
+.dropdown-content .link{
+    float: none;
+    color: $color-dropdown;
+    font-family: $font-normal;
+    font-size: map-get($fs, large);
+    text-decoration: none;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    color: $color-linkhover;
+  }
+.show{
+    display:block;
 }
