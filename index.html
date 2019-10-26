@@ -19,7 +19,7 @@
         </div>
         
         <div class ="mobile">
-            <button class="dropbtn" onclick="showMenu()">
+            <button class="dropbtn" id="menu-mobile">
                 <img src="assets/img/icons/menu-button-of-three-horizontal-lines.png" alt="">
             </button>
             <div class="dropdown-content" id="mobileMenu">
@@ -71,7 +71,7 @@
             </figure>
             <figure class="selling">
                 <img src="assets/img/icons/bank.png" alt="" class="process">
-                <figcaption> 4. Gana dinero</figcaption>
+                <figcaption> 4.Gana dinero</figcaption>
             </figure>
         </div>
     </section>
@@ -80,79 +80,8 @@
     <section id="favoritos">
         <!--LO MÁS BUSCADO-->
         <p class="title">Lo más buscado:</p>
-        <article class="mas-vendidos">
-            <div class="card">
-                <div class="seller-details">
-                    <img src="assets/img/perfiles/foto_perfil1.png" alt="" class="avatar">
-                    <p class="seller">len_serrano</p>
-                </div>
-                <figure class="favorites">
-                    <img src="https://picsum.photos/200" alt="ropa">
-                    <figcaption class="details">
-                        <div class="price-like">
-                            <span class="precio">$100</span>
-                            <span class="likes"><i class="fas fa-heart"></i> 10</span>
-                        </div>
-                        <div class="name">
-                            <span class="descripcion">Artículo para bebé 1</span> 
-                        </div>  
-                    </figcaption>
-                </figure> 
-            </div>
-            <div class="card">
-                <div class="seller-details">
-                    <img src="assets/img/perfiles/foto_perfil2.png" alt="" class="avatar">
-                    <p class="seller">len_serrano</p>
-                </div>
-                <figure class="favorites">
-                    <img src="https://picsum.photos/200" alt="ropa">
-                    <figcaption class="details">
-                        <div class="price-like">
-                            <span class="precio">$100</span>
-                            <span class="likes"><i class="far fa-heart"></i> 4</span>
-                        </div>
-                        <div class="name">
-                            <span class="descripcion">Artículo para bebé 1</span> 
-                        </div>  
-                    </figcaption>
-                </figure> 
-            </div>
-            <div class="card">
-                    <div class="seller-details">
-                        <img src="assets/img/perfiles/foto_perfil3.png" alt="" class="avatar">
-                        <p class="seller">len_serrano</p>
-                    </div>
-                    <figure class="favorites">
-                        <img src="https://picsum.photos/200" alt="ropa">
-                        <figcaption class="details">
-                            <div class="price-like">
-                                <span class="precio">$100</span>
-                                <span class="likes"><i class="fas fa-heart"></i> 10</span>
-                            </div>
-                            <div class="name">
-                                <span class="descripcion">Artículo para bebé 1</span> 
-                            </div>  
-                        </figcaption>
-                    </figure> 
-                </div>
-            <div class="card">
-                <div class="seller-details">
-                    <img src="assets/img/perfiles/foto_perfil4.png" alt="" class="avatar">
-                    <p class="seller">len_serrano</p>
-                </div>
-                <figure class="favorites">
-                    <img src="https://picsum.photos/200" alt="ropa">
-                    <figcaption class="details">
-                        <div class="price-like">
-                            <span class="precio">$100</span>
-                            <span class="likes"><i class="far fa-heart"></i> 4</span>
-                        </div>
-                        <div class="name">
-                            <span class="descripcion">Artículo para bebé 1</span> 
-                        </div>  
-                    </figcaption>
-                </figure> 
-            </div>
+        <article id="mas-vendidos">
+            
         </article>
         <!--/LO MÁS BUSCADO-->
         <!--RECOMENDACIONES-->
@@ -168,7 +97,7 @@
                     <figcaption class="details">
                         <div class="price-like">
                             <span class="precio">$100</span>
-                            <span class="likes"><i class="far fa-heart"></i> 4</span>
+                            <span class="likes" id ="counterLikes"><i class="far fa-heart"></i> 4</span>
                         </div>
                         <div class="name">
                             <span class="descripcion">Artículo para bebé 1</span> 
@@ -208,7 +137,13 @@
     </footer>
     <!--/FOOTER-->
     <!--SCRIPTS-->
-    <script src="./assets/js/dropdown.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="./assets/js/index.js"></script>
+
     <!--/SCRIPTS-->
 </body>
 </html>

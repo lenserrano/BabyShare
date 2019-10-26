@@ -69,7 +69,6 @@ header img {
   float: left;
   color: #e2f4f0;
   text-align: center;
-  padding-bottom: 1em;
 }
 
 .link:hover {
@@ -77,7 +76,7 @@ header img {
 }
 
 .sub-link {
-  padding: 2em;
+  padding-left: 1em;
 }
 
 .sub-link a:hover {
@@ -191,7 +190,7 @@ figure figcaption {
   grid-area: title;
 }
 
-.mas-vendidos, .recomendados {
+#mas-vendidos, .recomendados {
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(2, auto);

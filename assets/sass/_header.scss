@@ -60,13 +60,12 @@ header{
     float:left;
     color: $color-dropdown; 
     text-align: center;
-    padding-bottom: 1em;
 }
 .link:hover{
     color: $color-linkhover;
 }
 .sub-link {
-    padding: 2em;
+    padding-left: 1em;
 }
 .sub-link a:hover{
     color: $color-linkhover;
