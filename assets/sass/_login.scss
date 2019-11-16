@@ -1,0 +1,129 @@
+/* <div class="forms">
+        <div class="form-register">
+            <form action="" id="register">
+                <h2 class="title">Registrate</h2>
+                <input type="text" name="" id="inputName" class="input" placeholder="Nombre">
+                <input type="text" name="" id="inputSurnameA" class="input" placeholder="Apellido Paterno">
+                <input type="text" name="" id="inputSurnameB" class="input" placeholder="Apellido Materno">
+                <input type="email" name="" id="inputEmailA" class="input" placeholder="Correo Electrónico">
+                <input type="email" name="" id="inputEmailB" class="input" placeholder="Confirma Correo Electrónico">
+                <input type="password" name="" id="inputPasswordA" class="input" placeholder="Contraseña (min 6 carácteres)">
+                <input type="password" name="" id="inputPasswordB" class="input" placeholder="Repite la Contraseña">
+            </form>
+            <button class="form-button" id="buttonLogin">Enviar</button>
+            <span> o ya tienes cuenta <a class="subtitle" href="#form-login">Inicia Sesión</a></span>
+        </div>
+        <div id="form-login">
+            <h2 class="title">Inicia sesión</h2>
+                <input type="email" name="" id="inputEmail" class="input" placeholder="Correo Electrónico">
+                <input type="password" name="" id="inputPassword" class="input" placeholder="Contraseña">
+            </form>
+            <button class="form-button" id="buttonLogin">Enviar</button>
+            <span> ¿todavía no tienes cuenta <a class="subtitle" href="#form-register">Registrate</a></span>
+        </div>
+    </div>*/
+
+.forms{
+    @include flexbox(column, center, center);
+    font-family: $font-normal;
+    font-size: map-get($fs, normal);
+    color: $color-main;
+}
+.title{
+    font-family: $font-title;
+    font-size: map-get($fs, large);
+    font-weight: bold;
+    color: $color-title;
+    text-align: center !important;
+}
+.hint{
+    font-size: map-get($fs, small);
+}
+.subtitle{
+    font-family: $font-title;
+    font-size: map-get($fs, normal);
+    text-decoration: none;
+    color: $color-link;
+}
+.subtitle:hover{
+    color: $color-linkhover;
+}
+.form-register{
+    @include flexbox(column, center, center);
+    width: 80vw;
+    height: 90vh;
+    background-color: $bg-signup;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.form-login{
+    @include flexbox(column, center, center);
+    width: 80vw;
+    height: 90vh;
+    background-color: $bg-promotions;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#register{
+    display: block;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+#login{
+    display: block;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.input{
+    width: 90%;
+    height: 30px;
+    font-family: $font-normal;
+    font-size: map-get($fs, normal);
+    border: $border-form;
+    border-radius: $r-form;
+    padding: 3px 5px;
+    margin: 2px 5px;
+}
+.form-buttonRegister{
+    width: 30%;
+    height: 30px;
+    background-color:$bg-menuhover ;
+    font-family: $font-normal;
+    font-size: map-get($fs, normal);
+    color: $color-copy;
+    border: none;
+    border-radius: $r-form;
+    margin: 10px 10px;
+    &:hover{
+        background-color: $bg-submenuhover;
+    }
+}
+.buttonLog{
+    width: 100%;
+    height: auto;
+    @include flexbox(column, center, center);
+    margin-bottom: 5px;
+}
+.form-buttonLogin{
+    width: 30%;
+    height: 30px;
+    background-color:$bg-menuhover ;
+    font-family: $font-normal;
+    font-size: map-get($fs, normal);
+    color: $color-copy;
+    border: none;
+    border-radius: $r-form;
+    margin: 10px 10px;
+    &:hover{
+        background-color: $bg-submenuhover;
+    }
+}
+.is-invalid{
+    border: 1px solid red;
+}
+.validate{
+    color: red;
+    display: none;
+    font-size: map-get($fs, x-small);
+}
+

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   width: 100vw;
   height: 10vh;
@@ -69,7 +70,6 @@ header img {
   float: left;
   color: #e2f4f0;
   text-align: center;
-  padding-bottom: 1em;
 }
 
 .link:hover {
@@ -77,7 +77,7 @@ header img {
 }
 
 .sub-link {
-  padding: 2em;
+  padding-left: 1em;
 }
 
 .sub-link a:hover {
@@ -86,6 +86,44 @@ header img {
 
 .dropbtn:focus {
   background-color: #54b67d;
+}
+
+.sesion {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 3px;
+}
+
+.inicia {
+  margin-left: 20px;
+  margin-right: 10px;
+  background-color: transparent;
+  border: 1px solid #11e2b5;
+  border-radius: 10px;
+  color: #f3feed;
+  padding: 3px;
+}
+.inicia a {
+  text-decoration: none;
+  color: #f3feed;
+}
+
+.crea {
+  margin-right: 20px;
+  background-color: transparent;
+  border: 1px solid #87e7d2;
+  border-radius: 10px;
+  color: #f3feed;
+  padding: 3px;
+}
+.crea a {
+  text-decoration: none;
+  color: #f3feed;
+}
+.crea a:hover {
+  color: #146b41;
 }
 
 ul, li {
@@ -124,6 +162,61 @@ ul, li {
 }
 
 .show {
+  display: block;
+}
+
+#menu-desktop ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-desktop ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-desktop ul a {
+  display: block;
+  color: #3f7c6f;
+  text-decoration: none;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  padding: 1em;
+}
+
+#menu-desktop ul:hover {
+  color: #245349;
+}
+
+#menu-desktop ul li:hover {
+  background: #b9ded6;
+  color: #54b67d;
+}
+
+#menu-desktop ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #54b67d;
+  padding: 0;
+  z-index: 3;
+}
+
+#menu-desktop ul ul li {
+  float: none;
+  width: 300px;
+}
+
+#menu-desktop ul ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+}
+
+#menu-desktop ul li:hover > ul {
   display: block;
 }
 
@@ -191,7 +284,7 @@ figure figcaption {
   grid-area: title;
 }
 
-.mas-vendidos, .recomendados {
+#mas-vendidos, .recomendados {
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(2, auto);
@@ -296,6 +389,150 @@ footer {
 .main-icon-footer img {
   width: 40px;
   height: auto;
+}
+
+/* <div class="forms">
+        <div class="form-register">
+            <form action="" id="register">
+                <h2 class="title">Registrate</h2>
+                <input type="text" name="" id="inputName" class="input" placeholder="Nombre">
+                <input type="text" name="" id="inputSurnameA" class="input" placeholder="Apellido Paterno">
+                <input type="text" name="" id="inputSurnameB" class="input" placeholder="Apellido Materno">
+                <input type="email" name="" id="inputEmailA" class="input" placeholder="Correo Electrónico">
+                <input type="email" name="" id="inputEmailB" class="input" placeholder="Confirma Correo Electrónico">
+                <input type="password" name="" id="inputPasswordA" class="input" placeholder="Contraseña (min 6 carácteres)">
+                <input type="password" name="" id="inputPasswordB" class="input" placeholder="Repite la Contraseña">
+            </form>
+            <button class="form-button" id="buttonLogin">Enviar</button>
+            <span> o ya tienes cuenta <a class="subtitle" href="#form-login">Inicia Sesión</a></span>
+        </div>
+        <div id="form-login">
+            <h2 class="title">Inicia sesión</h2>
+                <input type="email" name="" id="inputEmail" class="input" placeholder="Correo Electrónico">
+                <input type="password" name="" id="inputPassword" class="input" placeholder="Contraseña">
+            </form>
+            <button class="form-button" id="buttonLogin">Enviar</button>
+            <span> ¿todavía no tienes cuenta <a class="subtitle" href="#form-register">Registrate</a></span>
+        </div>
+    </div>*/
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  color: #527466;
+}
+
+.title {
+  font-family: "Comfortaa", cursive;
+  font-size: 28px;
+  font-weight: bold;
+  color: #245349;
+  text-align: center !important;
+}
+
+.hint {
+  font-size: 12px;
+}
+
+.subtitle {
+  font-family: "Comfortaa", cursive;
+  font-size: 16px;
+  text-decoration: none;
+  color: #3f7c6f;
+}
+
+.subtitle:hover {
+  color: #54b67d;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 90vh;
+  background-color: #d8ece1;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 90vh;
+  background-color: #ecf5f0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#register {
+  display: block;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+#login {
+  display: block;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.input {
+  width: 90%;
+  height: 30px;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 3px 5px;
+  margin: 2px 5px;
+}
+
+.form-buttonRegister {
+  width: 30%;
+  height: 30px;
+  background-color: #54b67d;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  margin: 10px 10px;
+}
+.form-buttonRegister:hover {
+  background-color: #b9ded6;
+}
+
+.buttonLog {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.form-buttonLogin {
+  width: 30%;
+  height: 30px;
+  background-color: #54b67d;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  margin: 10px 10px;
+}
+.form-buttonLogin:hover {
+  background-color: #b9ded6;
 }
 
 body {

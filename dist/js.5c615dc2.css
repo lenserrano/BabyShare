@@ -1,0 +1,556 @@
+@charset "UTF-8";
+header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Assistant", sans-serif;
+  background-color: #b9ded6;
+  color: #527466;
+  overflow: hidden;
+}
+header img {
+  width: auto;
+  height: inherit;
+}
+
+.buscar {
+  font-size: 12px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.buscar input {
+  border: 1px solid #f2fbf9;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px 10px 5px 15px;
+  width: 100%;
+}
+.buscar input:focus {
+  border-color: #20c5a1;
+}
+.buscar button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.buscar button img {
+  width: 25px;
+  height: 25px;
+}
+
+.mobile {
+  float: left;
+  overflow: hidden;
+}
+.mobile button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.mobile button img {
+  width: 25px;
+  height: 25px;
+}
+
+.mobile .dropbtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  float: left;
+  color: #e2f4f0;
+  text-align: center;
+}
+
+.link:hover {
+  color: #54b67d;
+}
+
+.sub-link {
+  padding-left: 1em;
+}
+
+.sub-link a:hover {
+  color: #54b67d;
+}
+
+.dropbtn:focus {
+  background-color: #54b67d;
+}
+
+.sesion {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 3px;
+}
+
+.inicia {
+  margin-left: 20px;
+  margin-right: 10px;
+  background-color: transparent;
+  border: 1px solid #11e2b5;
+  border-radius: 10px;
+  color: #f3feed;
+  padding: 3px;
+}
+.inicia a {
+  text-decoration: none;
+  color: #f3feed;
+}
+
+.crea {
+  margin-right: 20px;
+  background-color: transparent;
+  border: 1px solid #87e7d2;
+  border-radius: 10px;
+  color: #f3feed;
+  padding: 3px;
+}
+.crea a {
+  text-decoration: none;
+  color: #f3feed;
+}
+.crea a:hover {
+  color: #146b41;
+}
+
+ul, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.dropdown-content {
+  font-family: "Assistant", sans-serif;
+  font-size: 28px;
+  background: #1d2623;
+  opacity: 0.9;
+  color: #e2f4f0;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding-left: 0.5em;
+  padding-top: 1em;
+}
+
+.dropdown-content .link {
+  float: none;
+  color: #e2f4f0;
+  font-family: "Assistant", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: #54b67d;
+}
+
+.show {
+  display: block;
+}
+
+#menu-desktop ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-desktop ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-desktop ul a {
+  display: block;
+  color: #3f7c6f;
+  text-decoration: none;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  padding: 1em;
+}
+
+#menu-desktop ul:hover {
+  color: #245349;
+}
+
+#menu-desktop ul li:hover {
+  background: #b9ded6;
+  color: #54b67d;
+}
+
+#menu-desktop ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #54b67d;
+  padding: 0;
+  z-index: 3;
+}
+
+#menu-desktop ul ul li {
+  float: none;
+  width: 300px;
+}
+
+#menu-desktop ul ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+}
+
+#menu-desktop ul li:hover > ul {
+  display: block;
+}
+
+.carousel {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.carousel img {
+  width: 80vw;
+  height: auto;
+}
+
+#vender {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  grid-template-columns: repeat(4, auto);
+  width: 100%;
+}
+
+figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+figure .process {
+  width: 10vw;
+  height: auto;
+}
+figure figcaption {
+  font-size: 12px;
+  font-family: "Assistant", sans-serif;
+  color: #527466;
+  font-weight: bold;
+}
+
+#favoritos {
+  width: 80vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 16px;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  text-align: left !important;
+  color: #3f7c6f;
+  grid-area: title;
+}
+
+#mas-vendidos, .recomendados {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
+  width: 100%;
+  gap: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.favorites {
+  width: 100%;
+}
+.favorites img {
+  width: 35vw;
+  height: auto;
+}
+.favorites .details {
+  /* @include flexbox(row, center, center);
+  flex-wrap: nowrap; */
+  width: 35vw;
+  font-size: 12px;
+  font-family: "Assistant", sans-serif;
+  font-weight: 300;
+  color: #527466;
+}
+
+.price-like {
+  display: inherit;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.price-like .precio {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.5em 2em 0.2em 0.5em;
+}
+
+.name {
+  display: inherit;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 0.2em 2em 0.5em 0.5em;
+}
+
+.seller-details {
+  display: inherit;
+  align-items: center;
+  margin: 0;
+}
+.seller-details .avatar {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #f2fbf9;
+  border-radius: 50%;
+  padding-right: 5px;
+}
+.seller-details .seller {
+  font-size: 12px;
+  font-family: "Assistant", sans-serif;
+  color: #527466;
+}
+
+footer {
+  width: 100vw;
+  height: auto;
+  font-family: "Assistant", sans-serif;
+  background-color: #b9ded6;
+  color: #527466;
+}
+
+.mobile-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1% 10%;
+}
+
+.icons-footer {
+  width: 40px;
+  height: auto;
+}
+
+.main-icon-footer {
+  border: 1px solid white;
+  border-radius: 50%;
+  background: white;
+  width: 60px;
+  height: 60px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.main-icon-footer img {
+  width: 40px;
+  height: auto;
+}
+
+/* <div class="forms">
+        <div class="form-register">
+            <form action="" id="register">
+                <h2 class="title">Registrate</h2>
+                <input type="text" name="" id="inputName" class="input" placeholder="Nombre">
+                <input type="text" name="" id="inputSurnameA" class="input" placeholder="Apellido Paterno">
+                <input type="text" name="" id="inputSurnameB" class="input" placeholder="Apellido Materno">
+                <input type="email" name="" id="inputEmailA" class="input" placeholder="Correo Electrónico">
+                <input type="email" name="" id="inputEmailB" class="input" placeholder="Confirma Correo Electrónico">
+                <input type="password" name="" id="inputPasswordA" class="input" placeholder="Contraseña (min 6 carácteres)">
+                <input type="password" name="" id="inputPasswordB" class="input" placeholder="Repite la Contraseña">
+            </form>
+            <button class="form-button" id="buttonLogin">Enviar</button>
+            <span> o ya tienes cuenta <a class="subtitle" href="#form-login">Inicia Sesión</a></span>
+        </div>
+        <div id="form-login">
+            <h2 class="title">Inicia sesión</h2>
+                <input type="email" name="" id="inputEmail" class="input" placeholder="Correo Electrónico">
+                <input type="password" name="" id="inputPassword" class="input" placeholder="Contraseña">
+            </form>
+            <button class="form-button" id="buttonLogin">Enviar</button>
+            <span> ¿todavía no tienes cuenta <a class="subtitle" href="#form-register">Registrate</a></span>
+        </div>
+    </div>*/
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  color: #527466;
+}
+
+.title {
+  font-family: "Comfortaa", cursive;
+  font-size: 28px;
+  font-weight: bold;
+  color: #245349;
+  text-align: center !important;
+}
+
+.hint {
+  font-size: 12px;
+}
+
+.subtitle {
+  font-family: "Comfortaa", cursive;
+  font-size: 16px;
+  text-decoration: none;
+  color: #3f7c6f;
+}
+
+.subtitle:hover {
+  color: #54b67d;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 90vh;
+  background-color: #d8ece1;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 90vh;
+  background-color: #ecf5f0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#register {
+  display: block;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+#login {
+  display: block;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.input {
+  width: 90%;
+  height: 30px;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 3px 5px;
+  margin: 2px 5px;
+}
+
+.form-buttonRegister {
+  width: 30%;
+  height: 30px;
+  background-color: #54b67d;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  margin: 10px 10px;
+}
+.form-buttonRegister:hover {
+  background-color: #b9ded6;
+}
+
+.buttonLog {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.form-buttonLogin {
+  width: 30%;
+  height: 30px;
+  background-color: #54b67d;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  margin: 10px 10px;
+}
+.form-buttonLogin:hover {
+  background-color: #b9ded6;
+}
+
+.is-invalid {
+  border: 1px solid red;
+}
+
+.validate {
+  color: red;
+  display: none;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=/js.5c615dc2.css.map */

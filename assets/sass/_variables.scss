@@ -13,16 +13,24 @@ $color-main: #527466;
 $color-title: #245349;
 $color-subtitle:#3f7c6f;
 $color-linkhover: #54b67d;
+$color-link: #3f7c6f;
+$color-menuhover: #245349;
 //  *   HEADER  *
 //Colors Backgrounds
 $bg-header: #b9ded6;
 $bg-footer: #b9ded6;
-$bg-signup: #c9f3db;
+$bg-signup: #d8ece1;
 $bg-signin: transparent;
+$bg-menudesktop: #080a09;
+$bg-menuhover: #54b67d;
+$bg-submenuhover: #b9ded6;
+$bg-buttonlogin: rgba(0,0,0,0.4);
 
 //Colors Fonts
 $color-signup: #54b67d;
 $color-signin: #2b6b48;
+$color-buttonlog: rgba(256,256,256,0.7);
+$color-span: rgba(0,0,0,0.4);
 
 //  *   PROMOCIONES  *
 //Colors Backgrounds
@@ -52,6 +60,7 @@ $bg-copy: #1c2522;
 
 //Colors Fonts
 $color-copy: #ffffff;
+$color-formbutton: rgba(256,256,256,0.7);
 
 
 //Fonts
@@ -64,6 +73,16 @@ $r-search: 10px;
 $border-color: #20c5a1;
 $bg-search: url('../img/icons/search.png');
 
+//* BOTTON SESION & REGISTER
+$border-login: 1px solid #11e2b5;
+$border-register: 1px solid #87e7d2;
+$bg-buttonregister: #94f0dc;
+$color-register: #146b41;
+$color-login: #f3feed;
+$r-button: 10px;
+$border-form: 1px solid #eee;
+$button-formhover: rgba(0,0,0,0.8);
+
 //  *   DROPDOWN    *
 $bg-dropdown: lighten(#1c2522, .5);
 $color-dropdown: #e2f4f0;
@@ -73,3 +92,6 @@ $margin: 5px;
 
 //  * AVATAR *
 $border-avatar: 1px solid #f2fbf9;
+
+//* LOGIN*
+$r-form: 15px;
