@@ -4,73 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/main.2b755954.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700|Comfortaa:400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dc59d4cb2d.js"></script>
     <title>BabyShare</title>
-<script src="/main.2b755954.js"></script><link rel="stylesheet" href="/js.5c615dc2.css"></head>
+</head>
 <body>
     <!--HEADER-->
     <header id="header">
-        <img src="/BabyShare_Logo.2f7040b3.png" alt="logo BabyShare">
-        <div class="buscar">
-            <input type="text" placeholder="Inicia tu búsqueda">
-            <button><img src="/search.f8ca225c.png" alt=""></button>
-        </div>
-        
-        <div class="mobile">
-            <button class="dropbtn" id="menu-mobile">
-                <img src="/menu-button-of-three-horizontal-lines.ecc4e975.png" alt="">
-            </button>
-            <div class="dropdown-content" id="mobileMenu">
-                <div class="sesion">
-                        <botton class="inicia"><a href="/login.html#login">Iniciar Sesión</a></botton>
-                        <botton class="crea"><a href="/login.html#register">Crea una cuenta</a></botton>
-                </div>
-                <div class="menu-nav">
+        <img src="assets/img/BabyShare_Logo.png" alt="logo BabyShare">
+        <nav id="menu-desktop">
+            <ul>
+                <li>Categorías
                     <ul>
-                        <li><a href="#" class="link">Categorías</a></li>
-                            <li><a href="#" class="link sub-link">Niñas</a></li>
-                            <li><a href="#" class="link sub-link">Niños</a></li>
-                            <li><a href="#" class="link sub-link">Juguetes</a></li>
-                            <li><a href="#" class="link sub-link">Accesorios</a></li>
-                            <li><a href="#" class="link sub-link">Maternidad</a></li>
-                        <li><a href="#" class="link sesion-on">Mi Clóset</a></li>
-                        <li><a href="#" class="link sesion-on">Mis Pedidos</a></li>
-                        <li><a href="#" class="link sesion-on">Mi Monedero</a></li>
-                        <li><a href="#" class="link sesion-on">Configuración</a></li>
-                            <li><a href="#" class="link sub-link sesion-on">Cambiar contraseña</a></li>
-                            <li><a href="#" class="link sub-link sesion-on">Métodos de pago</a></li>
-                            <li><a href="#" class="link sub-link sesion-on">Dirección de envío</a></li>
+                        <li>Niñas</li>
+                        <li>Niños</li>
+                        <li>Juguetes</li>
+                        <li>Accesorios</li>
+                        <li>Maternidad</li>
                     </ul>
-                    <p>Nuestras redes</p>
-                </div>
-            </div>     
+                </li>
+            </ul>
+        </nav>
+        <div class="buscar" >
+            <input type="text" placeholder="Inicia tu búsqueda">
+            <button><img src="assets/img/icons/search.png" alt=""></button>
         </div>
     </header>
     <!--/HEADER-->
     <!--PROMOCIONES-->
     <section id="promociones">
         <div class="carousel">
-            <img src="/hero_image1.761f347d.jpg" alt="">
+            <img src="assets/img/hero_image1.jpg" alt="">
         </div>
     </section>
     <section id="vender">
         <div class="container">
             <figure class="selling">
-                <img src="/camera.ae663798.png" alt="" class="process">
+                <img src="assets/img/icons/camera.png" alt="" class="process">
                 <figcaption> 1. Súbelo</figcaption>
             </figure>
             <figure class="selling">
-                <img src="/shopping.296db88a.png" alt="" class="process">
+                <img src="assets/img/icons/shopping.png" alt="" class="process">
                 <figcaption> 2. Véndelo</figcaption>
             </figure>
             <figure class="selling">
-                <img src="/present.37cc040e.png" alt="" class="process">
+                <img src="assets/img/icons/present.png" alt="" class="process">
                 <figcaption> 3. Mándalo</figcaption>
             </figure>
             <figure class="selling">
-                <img src="/bank.400c716d.png" alt="" class="process">
+                <img src="assets/img/icons/bank.png" alt="" class="process">
                 <figcaption> 4.Gana dinero</figcaption>
             </figure>
         </div>
@@ -89,7 +72,7 @@
         <article class="recomendados">
             <div class="card">
                 <div class="seller-details">
-                    <img src="/foto_perfil5.71849f17.png" alt="" class="avatar">
+                    <img src="assets/img/perfiles/foto_perfil5.png" alt="" class="avatar">
                     <p class="seller">len_serrano</p>
                 </div>
                 <figure class="favorites">
@@ -97,7 +80,7 @@
                     <figcaption class="details">
                         <div class="price-like">
                             <span class="precio">$100</span>
-                            <span class="likes" id="counterLikes"><i class="far fa-heart"></i> 4</span>
+                            <span class="likes" id ="counterLikes"><i class="far fa-heart" ></i> 4</span>
                         </div>
                         <div class="name">
                             <span class="descripcion">Artículo para bebé 1</span> 
@@ -107,7 +90,7 @@
             </div>
             <div class="card">
                 <div class="seller-details">
-                    <img src="/foto_perfilFem.cf3ab24c.png" alt="" class="avatar">
+                    <img src="assets/img/perfiles/foto_perfilFem.png" alt="" class="avatar">
                     <p class="seller">len_serrano</p>
                 </div>
                 <figure class="favorites">
@@ -130,16 +113,19 @@
     <!--FOOTER-->
     <footer id="footer">
         <div class="mobile-footer">
-        <span><img src="/favoritos.805cfcb2.png" alt="" class="icons-footer"></span>
-        <span class="main-icon-footer"><img src="/camera.ae663798.png" alt="" class="icons-footer-"></span>
-        <span><img src="/notification.87b3ce5d.png" alt="" class="icons-footer"></span>
+        <span><img src="./assets/img/icons/favoritos.png" alt="" class="icons-footer"></span>
+        <span class="main-icon-footer"><img src="./assets/img/icons/camera.png" alt="" class="icons-footer-"></span>
+        <span><img src="./assets/img/icons/notification.png" alt="" class="icons-footer"></span>
         </div>  
     </footer>
     <!--/FOOTER-->
     <!--SCRIPTS-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
     </script>
-    <script src="/js.5c615dc2.js"></script>
+    <script src="./assets/js/index.js"></script>
 
     <!--/SCRIPTS-->
 </body>

@@ -117,7 +117,27 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"assets/js/dropdown.js":[function(require,module,exports) {
+var c = document.getElementById('menu-mobile');
+window.addEventListener('click', toggleMenuClose);
+c.addEventListener('click', toggleMenuOpen);
+
+function toggleMenuOpen(e) {
+  e.stopPropagation();
+  document.getElementById("mobileMenu").classList.toggle("show");
+  console.log("entro showMenu()");
+  console.log(document.getElementById("mobileMenu").getElementsByClassName('show'));
+}
+
+function toggleMenuClose() {
+  var dropdownMenu = document.getElementById("mobileMenu");
+
+  if (dropdownMenu.classList.contains('show')) {
+    dropdownMenu.classList.remove('show');
+    console.log("Me sali");
+  }
+}
+},{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -184,12 +204,150 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"assets/css/main.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"assets/sass/main.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/js/login.js":[function(require,module,exports) {
+"use strict";
+
+require("./dropdown.js");
+
+require("../sass/main.scss");
+
+//Constantes
+var name = $('#inputName');
+var firstSurname = $('#inputSurnameA');
+var lastSurname = $('#inputSurnameB');
+var email = $('#inputEmailA');
+var emailConfirm = $('#inputEmailB');
+var password = $('#inputPasswordA');
+var passwordConfirm = $('#inputPasswordB');
+var emailLogin = $('#inputEmail');
+var passwordLogin = $('#inputPassword');
+var userRegister = [];
+name.keypress(function () {
+  name.removeClass('is-invalid');
+});
+name.blur(function () {
+  name.removeClass('is-invalid');
+});
+firstSurname.keypress(function () {
+  firstSurname.removeClass('is-invalid');
+});
+firstSurname.blur(function () {
+  firstSurname.removeClass('is-invalid');
+});
+lastSurname.keypress(function () {
+  lastSurname.removeClass('is-invalid');
+});
+lastSurname.blur(function () {
+  lastSurname.removeClass('is-invalid');
+});
+email.keypress(function () {
+  email.removeClass('is-invalid');
+  $('#mail').css("display", "none");
+});
+email.blur(function () {
+  email.removeClass('is-invalid');
+  $('#mail').css("display", "none");
+});
+emailConfirm.keypress(function () {
+  emailConfirm.removeClass('is-invalid');
+});
+emailConfirm.blur(function () {
+  emailConfirm.removeClass('is-invalid');
+});
+password.keypress(function () {
+  password.removeClass('is-invalid');
+  $('#pass1').css("display", "none");
+});
+password.blur(function () {
+  password.removeClass('is-invalid');
+  $('#pass1').css("display", "none");
+});
+passwordConfirm.keypress(function () {
+  passwordConfirm.removeClass('is-invalid');
+  $('#pass2').css("display", "none");
+});
+passwordConfirm.blur(function () {
+  passwordConfirm.removeClass('is-invalid');
+  $('#pass2').css("display", "none");
+});
+
+var validateInputsRegister = function validateInputsRegister() {
+  name.val() ? '' : name.addClass('is-invalid');
+  firstSurname.val() ? '' : firstSurname.addClass('is-invalid');
+  lastSurname.val() ? '' : lastSurname.addClass('is-invalid');
+  email.val() ? '' : email.addClass('is-invalid');
+  emailConfirm.val() ? '' : emailConfirm.addClass('is-invalid');
+  password.val() ? '' : password.addClass('is-invalid');
+  passwordConfirm.val() ? '' : passwordConfirm.addClass('is-invalid');
+  console.log(password.val(), passwordConfirm.val());
+
+  if (name.val() && firstSurname.val() && lastSurname.val() && email.val() && emailConfirm.val() && password.val() && passwordConfirm.val() !== '') {
+    if (validateEmail(email.val(), emailConfirm.val()) && validatePassword(password.val(), passwordConfirm.val())) {
+      addUser();
+    }
+  }
+};
+
+window.validateInputsRegister = validateInputsRegister;
+
+var validateEmail = function validateEmail(email_, emailConfirm_) {
+  if (email_ == emailConfirm_) {
+    return true;
+  } else {
+    email.addClass('is-invalid');
+    emailConfirm.addClass('is-invalid');
+    $('#mail').css("display", "block");
+    return false;
+  }
+};
+
+var validatePassword = function validatePassword(password_, passwordConfirm_) {
+  if (password_ == passwordConfirm_) {
+    console.log(password_, passwordConfirm_);
+
+    if (password_.length < 6) {
+      password.addClass('is-invalid');
+      $('#pass1').css("display", "block");
+      passwordConfirm.addClass('is-invalid');
+      return false;
+    } else {
+      console.log('entre a más de 6 carácteres');
+      return true;
+    }
+  } else {
+    password.addClass('is-invalid');
+    passwordConfirm.addClass('is-invalid');
+    $('#pass2').css("display", "block");
+    return false;
+  }
+};
+
+var validateInputsLogin = function validateInputsLogin() {
+  emailLogin.val() ? '' : emailLogin.addClass('is-invalid');
+  passwordLogin.val() ? '' : passwordLogin.addClass('is-invalid');
+
+  if (emailLogin.val() && passwordLogin.val() !== '') {
+    add();
+  }
+};
+
+var addUser = function addUser() {
+  var newItem = {
+    name: name.val(),
+    firstSurname: firstSurname.val(),
+    lastSurname: lastSurname.val(),
+    email: email.val(),
+    password: password.val()
+  };
+  userRegister.push(newItem);
+  console.log(userRegister);
+};
+},{"./dropdown.js":"assets/js/dropdown.js","../sass/main.scss":"assets/sass/main.scss"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -393,5 +551,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/main.2b755954.js.map
+},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","assets/js/login.js"], null)
+//# sourceMappingURL=/login.efe58800.js.map

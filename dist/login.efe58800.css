@@ -535,6 +535,16 @@ footer {
   background-color: #b9ded6;
 }
 
+.is-invalid {
+  border: 1px solid red;
+}
+
+.validate {
+  color: red;
+  display: none;
+  font-size: 10px;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -543,4 +553,4 @@ body {
   align-items: center;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=/login.efe58800.css.map */

@@ -507,12 +507,13 @@ var vista = function vista(product) {
   var favs = document.getElementById('likes' + product.id);
 
   if (product.liked == true) {
+    favs.appendChild;
     html = "<i class=\"fas fa-heart heart\" data-productId = \"".concat(product.id, "\"></i>\n        <span id=\"n-likes").concat(product.id, "\">").concat(product.numberLikes, "</span></span>");
+    return favs.innerHTML = html;
   } else {
     html = "<i class=\"far fa-heart heart\" data-productId = \"".concat(product.id, "\"></i>\n        <span id=\"n-likes").concat(product.id, "\">").concat(product.numberLikes, "</span></span>");
+    return favs.innerHTML = html;
   }
-
-  favs.innerHTML = html;
 };
 
 function contLikes(likes, isLiked) {
@@ -556,7 +557,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55680" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53900" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

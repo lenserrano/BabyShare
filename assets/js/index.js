@@ -9,6 +9,7 @@ const producto = document.getElementById('mas-vendidos');
 producto.innerHTML = product.map(myProducts).join('');
 
 const heart = document.querySelectorAll('.heart');
+
     heart.forEach(element => {
         element.addEventListener('click', (e) => { 
             const product_ = product.find( el => {
@@ -29,14 +30,17 @@ const vista = (product) =>{
     let html = '';
     const favs = document.getElementById('likes'+product.id);
     if( product.liked == true){
+        favs.appendChild
         html = `<i class="fas fa-heart heart" data-productId = "${product.id}"></i>
         <span id="n-likes${product.id}">${product.numberLikes}</span></span>`
+        return favs.innerHTML = html;
 
     }else{
         html = `<i class="far fa-heart heart" data-productId = "${product.id}"></i>
         <span id="n-likes${product.id}">${product.numberLikes}</span></span>`
+        return favs.innerHTML = html;
     }
-    favs.innerHTML = html;
+    
 }
  
 
